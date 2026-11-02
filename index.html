@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mos Eisley Cantina · Tatooine's busiest watering hole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { darkMode: "class" };
+</script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur">
+        <nav aria-label="Primary" class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-3">
+                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-600 font-bold text-white">
+                  ME
+                </span>
+                <span class="text-lg font-semibold tracking-tight">
+                  Mos Eisley Cantina
+                </span>
+              </div>
+              <div class="hidden items-center gap-6 md:flex">
+                <a href="#features" class="text-sm text-slate-300 transition hover:text-white">Features</a>
+                <a href="#menu" class="text-sm text-slate-300 transition hover:text-white">Menu</a>
+                <a href="#music" class="text-sm text-slate-300 transition hover:text-white">Live music</a>
+                <a href="#signin" class="text-sm text-slate-300 transition hover:text-white">Sign in</a>
+              </div>
+              <a
+  href="#reserve"
+  class="rounded-xl bg-violet-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+>
+  Reserve a booth
+</a>
+        </nav>
+      </header>
+      <main class="bg-gradient-to-br from-slate-950 via-violet-950/40 to-amber-950/30">
+<section class="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2">
+      <div>
+  <span class="inline-flex items-center rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-2 text-sm text-violet-200">
+    Open every night, 3 ABY
+  </span>
+  <h1 class="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+    Find your watering hole on
+<span class="bg-gradient-to-r from-violet-400 to-amber-300 bg-clip-text text-transparent">Tatooine</span>
+  </h1>
+  <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
+    A legendary stop on the edge of the galaxy. Cold drinks, live music,
+    and characters you won't find anywhere else in the Outer Rim.
+  </p>
+  <div class="mt-8 flex flex-wrap gap-4">
+    <a
+      href="#reserve"
+      class="rounded-xl bg-violet-600 px-6 py-3 font-semibold text-white transition hover:bg-violet-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+    >
+      Reserve a booth
+    </a>
+  
+    <a
+      href="#menu"
+      class="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+    >
+      Explore the menu
+    </a>
+</div>
+</div>
+<figure class="relative">
+    <img
+      src="https://product-builder-fullstack.s3.eu-west-3.amazonaws.com/M02_Web-Foundation/unsplash-cantina.jpeg"
+      alt="Interior of the Mos Eisley Cantina"
+      class="w-full rounded-3xl object-cover ring-1 ring-white/10"
+    />
+    <figcaption class="mt-4 flex items-center justify-between text-sm text-slate-400">
+        <span>Somewhere between the stars</span>
+        <span class="rounded-full border border-white/10 px-3 py-1">Tatooine · 3 ABY</span>
+      </figcaption>
+  </figure>
+        </section>
+        <section id="features" aria-labelledby="features-title" class="mx-auto max-w-6xl px-6 py-20">
+          <h2 id="features-title" class="text-2xl font-bold text-white mb-10">
+            Cantina features
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-6 shadow-sm transition hover:-translate-y-1 duration-200">
+              <div class="size-12 flex items-center justify-center rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-4">
+                <!-- Musical note icon SVG -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="w-6 h-6 text-violet-300">
+                  <path d="M16 4v10.09A4 4 0 1 0 18 18V8h4V4h-6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-white mb-2">Live music nightly</h3>
+              <p class="text-slate-300">Sunset to sunrise, loud enough to drown out a bounty hunter.</p>
+            </article>
+            <!-- Card 2 -->
+            <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-6 shadow-sm transition hover:-translate-y-1 duration-200">
+              <div class="size-12 flex items-center justify-center rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-4">
+                <!-- Space ship icon SVG -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="w-6 h-6 text-violet-300">
+                  <path d="M2 17L12 7l10 10M12 7v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-white mb-2">Smugglers welcome</h3>
+              <p class="text-slate-300">No questions asked. Back booths, no records kept.</p>
+            </article>
+            <!-- Card 3 -->
+            <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-2xl p-6 shadow-sm transition hover:-translate-y-1 duration-200">
+              <div class="size-12 flex items-center justify-center rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 mb-4">
+                <!-- Droid head icon SVG -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="w-6 h-6 text-violet-300">
+                  <circle cx="12" cy="14" r="6" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="9.5" cy="13.5" r="1" fill="currentColor"/>
+                  <circle cx="14.5" cy="13.5" r="1" fill="currentColor"/>
+                  <path d="M12 8V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-white mb-2">Droids: see house policy</h3>
+              <p class="text-slate-300">Limits on the floor. Power-down recommended.</p>
+            </article>
+          </div>
+        </section>
+<section id="pricing" aria-labelledby="pricing-title" class="mx-auto max-w-6xl px-6 py-20">
+  <h2 id="pricing-title" class="mb-10 text-3xl font-bold text-white">
+    Choose your booth
+  </h2>
+
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+    <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+      <h3 class="text-xl font-bold text-white">Outer Rim</h3>
+      <p class="mt-2 text-sm text-slate-400">For spontaneous travellers</p>
+      <p class="my-6 text-4xl font-bold text-white">0 <span class="text-base font-normal text-slate-400">credits</span></p>
+      <ul class="space-y-3 text-slate-300">
+        <li>&#10003; Walk-in only</li>
+        <li>&#10003; Bar stool seating</li>
+        <li>&#10003; House blue milk</li>
+      </ul>
+      <a href="#reserve" class="mt-8 inline-block rounded-xl border border-white/20 px-5 py-3 font-semibold text-white hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">Walk in</a>
+    </article>
+
+    <article class="relative rounded-2xl border border-violet-500 bg-white/[0.03] p-6 ring-2 ring-violet-500 backdrop-blur">
+      <span class="inline-block rounded-full bg-violet-500 px-3 py-1 text-xs font-bold text-white">Recommended</span>
+      <h3 class="mt-4 text-xl font-bold text-white">Mid Rim</h3>
+      <p class="mt-2 text-sm text-slate-400">The cantina favourite</p>
+      <p class="my-6 text-4xl font-bold text-white">25 <span class="text-base font-normal text-slate-400">credits</span></p>
+      <ul class="space-y-3 text-slate-300">
+        <li>&#10003; Reserved booth</li>
+        <li>&#10003; Live music nights</li>
+        <li>&#10003; Smuggler-friendly back row</li>
+      </ul>
+      <a href="#reserve" class="mt-8 inline-block rounded-xl bg-violet-600 px-5 py-3 font-semibold text-white hover:bg-violet-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">Reserve a booth</a>
+    </article>
+
+    <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+      <h3 class="text-xl font-bold text-white">Core Worlds</h3>
+      <p class="mt-2 text-sm text-slate-400">For distinguished guests</p>
+      <p class="my-6 text-4xl font-bold text-white">120 <span class="text-base font-normal text-slate-400">credits</span></p>
+      <ul class="space-y-3 text-slate-300">
+        <li>&#10003; Private VIP table</li>
+        <li>&#10003; Jedi-grade service</li>
+        <li>&#10003; Bodyguard droid on call</li>
+      </ul>
+      <a href="#reserve" class="mt-8 inline-block rounded-xl border border-white/20 px-5 py-3 font-semibold text-white hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">Book VIP</a>
+    </article>
+  </div>
+</section>
+      </main>
+<footer class="border-t border-white/10 bg-slate-950/70">
+  <div class="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-8 md:flex-row md:items-center md:justify-between">
+    <div class="flex items-center gap-3">
+      <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-violet-600 font-bold text-white">ME</span>
+      <span class="font-semibold text-white">Mos Eisley Cantina</span>
+    </div>
+
+    <p class="text-sm text-slate-400">© 3 ABY Mos Eisley Cantina</p>
+
+    <nav aria-label="Footer" class="flex flex-wrap gap-5 text-sm text-slate-300">
+      <a href="#privacy" class="hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">Privacy</a>
+      <a href="#terms" class="hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">Terms</a>
+      <a href="#contact" class="hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">Contact</a>
+    </nav>
+  </div>
+</footer>
+  </body>
+</html>
